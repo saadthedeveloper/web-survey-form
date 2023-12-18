@@ -1,0 +1,92 @@
+body{
+    color: white;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1579547621309-5e57ab324182?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHB1cnBsZXxlbnwwfHwwfHx8MA%3D%3D');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#headerdiv
+{
+    height: 190px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(72, 5, 78);
+    font-size: 20px;
+    
+}
+
+#title
+{
+font-size: 38px;
+}
+#description
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="checkbox"], input[type="radio"]
+{
+    display: inline-block;
+}
+.check-label, .radio-label, .name-label    
+{
+    display: block;
+}
+.fieldset1-input-elements, select, textarea
+{
+    display: block;
+    width: 97%;
+    max-width: 97%;
+    margin: 0 auto;
+    color: black;
+    text-align: left;
+    font-family: ;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+form
+{
+    margin: 0 auto;
+    width: 45vw;
+    max-width: 45vw;
+    background-color: rgba(31, 4, 30, 0.5);
+    border-radius: 23px;   
+}
+.fieldset1-input-elements, select
+{
+    height: 36px;
+    border-radius: 7px;
+    border: none;
+}
+fieldset
+{
+    border: none;
+}
+#fieldset1{
+    padding-top: 35px;
+}
+button
+{
+    display: block;
+    margin: 10px auto;
+    width: 91%;
+    max-width: 96%;
+    height: 36px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.fieldset1labels, legend
+{
+    display: block;
+    margin: 10px 0;
+}
+textarea
+{
+    width: 95%;
+    max-width: 95%;
+}
+#buttondiv{
+    height: 85px;
+}

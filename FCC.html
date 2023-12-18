@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FCC.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="headerdiv">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time <br> to help us improve the platform</p>
+        </div>
+    </header>
+
+<main>
+    <form action="Backen.php" id="survey-form">
+        
+        <!--Fieldset 1 below-->
+        <fieldset id="fieldset1" class="formfieldsets">
+            <label for="name" class="fieldset1labels" id="name-label">Name</label><input class="fieldset1-input-elements" type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" class="fieldset1labels" id="email-label">Email</label><input class="fieldset1-input-elements" type="email" id="email"
+            placeholder="Enter your Email"  required>
+            
+            <label for="number" class="fieldset1labels" id="number-label">Age <span>(optional)</span> </label>  
+            <input class="fieldset1-input-elements" type="number" id="number" min="10" max="120" placeholder="Enter your age" value="Age">
+        </fieldset>
+        
+        
+        <!--Radio elements below-->
+        <fieldset id="fieldset2" class="formfieldsets">
+            <legend>Would you recommend our platform to a friend?</legend>
+            <label for="definitely" class="radio-label" ><input checked id="definitely" type="radio" value="Definitely" name="user-recommendation">
+                Definitely</label>
+            <label for="maybe" class="radio-label"><input id="maybe" type="radio" value="Maybe" name="user-recommendation">
+                Maybe</label>
+            <label for="not-sure" class="radio-label"><input id="not-sure" type="radio" value="Not sure" name="user-recommendation">
+                Not sure</label>
+        </fieldset>
+
+        <!--Select element below-->
+        <fieldset id="fieldset3" class="formfieldsets">
+            <legend>What is your favorite feature of our platform</legend>
+            <select name="favorite-feature" id="dropdown">
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open source</option>
+            </select>
+        </fieldset>
+        
+        
+        <!--Checkoxes below-->
+        <fieldset id="fieldset4" class="formfieldsets">
+            <legend>What would you like to see improved?<span>(Check all that apply)</span></legend>
+            <label class="check-label" for="front-end-projects"><input type="checkbox" value="Front-end-Projects"
+                    id="front-end-projects">Front-end Projects</label>
+            <label class="check-label" for="back-end-projects"><input type="checkbox" value="Back-end-Projects"
+                    id="back-end-projects">Back-end Projects</label>
+            <label class="check-label" for="data-visualization"><input type="checkbox" value="Data-Visualization"
+                    id="data-visualization">Data Visualization</label>
+            <label class="check-label" for="challenges"><input type="checkbox" value="Challenges"
+                    id="challenges">Challenges</label>
+        </fieldset>
+        
+
+        <!--Textbox below-->
+        <fieldset id="fieldset5" class="formfieldsets">
+            <legend>Any comments or suggestions?</legend>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+
+
+        <!--Button below-->
+        <div id="buttondiv">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+
+        
+        
+    </form>
+</main>
+
+</body>
+
+</html>
